@@ -3,49 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>$IGOOSE — самый настоящий мемкоин про Important Goose</title>
+    <title>$IGOOSE</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Comic Sans MS', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
             margin: 0;
             padding: 0;
-            background-color: #fff;
-            color: #000;
-        }
-        .header {
-            background-color: #ffcc00;
-            color: #000;
-            padding: 50px 20px;
             text-align: center;
+        }
+        header {
+            background-color: #ffcc00;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
         }
         .container {
             padding: 20px;
         }
-        .section {
-            margin: 40px 0;
-        }
-        .section h2 {
-            color: #ffcc00;
-        }
-        .roadmap, .tokenomics {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .roadmap div, .tokenomics div {
-            flex: 1 1 200px;
-            padding: 10px;
-            margin: 10px;
-            background-color: #f4f4f4;
+        .roadmap, .tokenomics, .story {
+            background-color: #ffffff;
             border-radius: 10px;
-            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 20px;
         }
-        .footer {
-            background-color: #ffcc00;
-            color: #000;
-            text-align: center;
+        .roadmap h2, .tokenomics h2, .story h2 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
             padding: 10px;
-            position: relative;
-            width: 100%;
         }
         a {
             color: #ffcc00;
@@ -54,86 +46,51 @@
     </style>
 </head>
 <body>
-
-    <div class="header">
+    <header>
         <h1>$IGOOSE</h1>
-        <p>Самый настоящий мемкоин про Important Goose</p>
-        <p>Стань холдером $IGOOSE и тебя ждет самое невероятное и яркое приключение.</p>
-        <p>$IGOOSE — это мемкоин с широким utilitiy, которое захватит мир! Играй в игру и заработывай реальные деньги.</p>
-    </div>
-
+        <p>самый настоящий мемкоин про Important Goose</p>
+    </header>
     <div class="container">
-        <div class="section">
+        <p>Ведь каждый из нас немного Important Goose</p>
+        <p>Стань холдером $IGOOSE</p>
+        <p>И тебя ждет самое невероятное и яркое приключение.</p>
+        <p>$IGOOSE — это мемкоин с широким utilitiy, которое захватит мир! Играй в игру и заработывай реальные деньги.</p>
+
+        <div class="roadmap">
             <h2>Как выглядит наша Roadmap?</h2>
-            <div class="roadmap">
-                <div>
-                    <h3>II квартал 2024</h3>
-                    <p>Листинг $IGOOSE на DEX</p>
-                </div>
-                <div>
-                    <h3>II квартал 2024</h3>
-                    <p>Хакатон – конкурс для разработчиков на базе TON</p>
-                </div>
-                <div>
-                    <h3>III квартал 2024</h3>
-                    <p>Запуск коллаборации стикеров NFT emoji</p>
-                </div>
-                <div>
-                    <h3>IV квартал 2024</h3>
-                    <p>Запуск игры и листинг на СЕХ</p>
-                </div>
-            </div>
+            <ul>
+                <li>Листинг $IGOOSE на DEX — II квартал 2024</li>
+                <li>Запуск коллаборации стикеров NFT emoji — II квартал 2024</li>
+                <li>Хакатон – конкурс для разработчиков на базе TON — III квартал 2024</li>
+                <li>Запуск игры и листинг на СЕХ — IV квартал 2024</li>
+            </ul>
         </div>
 
-        <div class="section">
+        <div class="tokenomics">
             <h2>Токеномика $IGOOSE</h2>
-            <div class="tokenomics">
-                <div>
-                    <h3>30%</h3>
-                    <p>Пресейл</p>
-                </div>
-                <div>
-                    <h3>20%</h3>
-                    <p>Ликвидность Ston.fi</p>
-                </div>
-                <div>
-                    <h3>10%</h3>
-                    <p>Эйрдроп</p>
-                </div>
-                <div>
-                    <h3>12%</h3>
-                    <p>Интеграция в игровой процесс</p>
-                </div>
-                <div>
-                    <h3>10%</h3>
-                    <p>CEX</p>
-                </div>
-                <div>
-                    <h3>8%</h3>
-                    <p>Команде</p>
-                </div>
-                <div>
-                    <h3>5%</h3>
-                    <p>Маркетинг и масштабирование</p>
-                </div>
-                <div>
-                    <h3>5%</h3>
-                    <p>Вознаграждение держателей</p>
-                </div>
-            </div>
+            <ul>
+                <li>30% пресейл</li>
+                <li>20% ликвидность Ston.fi</li>
+                <li>10% эирдроп</li>
+                <li>12% интеграция в игровой процесс</li>
+                <li>10% СEX</li>
+                <li>8% команде</li>
+                <li>5% маркетинг и масштабирование</li>
+                <li>5% вознаграждение держателей</li>
+            </ul>
+            <p>Всего 1.000.000.000 токенов</p>
         </div>
 
-        <div class="section">
-            <h2>Контакты</h2>
-            <p>Твиттер: <a href="https://twitter.com/IGooseTON" target="_blank">https://twitter.com/IGooseTON</a></p>
-            <p>Телеграм канал: <a href="http://t.me/importantgoosecoin" target="_blank">http://t.me/importantgoosecoin</a></p>
-            <p>Сайт: <a href="https://igoose.space" target="_blank">https://igoose.space</a></p>
+        <div class="story">
+            <h2>История важного гуся</h2>
+            <p>Когда-то давным-давно в маленькой деревне жил важный гусь по имени Густав. Он был не просто гусем, а настоящим лидером, который всегда помогал другим гусям находить еду и защищать их от опасностей. Однажды, когда деревня оказалась под угрозой нападения лис, Густав собрал всех гусей и разработал хитрый план обороны. Благодаря его смекалке и храбрости, все гуси были спасены, а Густав стал настоящей легендой среди гусей. Его история вдохновила создание $IGOOSE, символизируя лидерство и смекалку, которую каждый держатель может ощутить.</p>
         </div>
-    </div>
 
-    <div class="footer">
-        &copy; 2024 Important Goose
+        <p>Important goose уже ждет тебя!</p>
     </div>
-
+    <footer>
+        <p><a href="https://t.me">Телеграм канал</a> | <a href="https://twitter.com">Твиттер</a></p>
+        <p>Made on Tilda</p>
+    </footer>
 </body>
 </html>
