@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamster Kombat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            padding: 20px;
+        }
+        .balance, .level, .energy {
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hamster Kombat</h1>
+        <div class="balance">Баланс: <span id="balance">41144856</span></div>
+        <div class="level">Уровень: 9/10</div>
+        <div class="energy">Энергия: <span id="energy">10500</span>/10500</div>
+        <button onclick="earn()">Tap to Earn</button>
+        <button onclick="boost()">Boost</button>
+        <button onclick="exchange()">Exchange</button>
+        <button onclick="mine()">Mine</button>
+        <button onclick="friends()">Friends</button>
+        <button onclick="earnCommand()">Earn</button>
+        <button onclick="airdrop()">Airdrop</button>
+    </div>
+
+    <script>
+        let balance = 41144856;
+        let tapIncome = 20;
+        let currentEnergy = 10500;
+
+        function updateUI() {
+            document.getElementById('balance').innerText = balance;
+            document.getElementById('energy').innerText = currentEnergy;
+        }
+
+        function earn() {
+            balance += tapIncome;
+            updateUI();
+        }
+
+        function boost() {
+            alert("Boost not implemented yet!");
+        }
+
+        function exchange() {
+            alert("Exchange not implemented yet!");
+        }
+
+        function mine() {
+            alert("Mine not implemented yet!");
+        }
+
+        function friends() {
+            alert("Friends not implemented yet!");
+        }
+
+        function earnCommand() {
+            alert("Earn not implemented yet!");
+        }
+
+        function airdrop() {
+            alert("Airdrop not implemented yet!");
+        }
+    </script>
+</body>
+</html>
