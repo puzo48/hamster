@@ -19,9 +19,6 @@
             margin: 20px 0;
             font-size: 24px;
         }
-        .level, .energy {
-            display: none;
-        }
         .btn-tap {
             padding: 20px 40px;
             margin: 20px;
@@ -47,16 +44,37 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
         let balance = 0;
-        let tapIncome = 20;
+        const userId = Telegram.WebApp.initDataUnsafe.user.id;
+        const serverUrl = 'http://192.168.0.6:5000';  // Заменено на URL вашего сервера
+
+        async function getBalance() {
+            const response = await fetch(`${serverUrl}/get_balance?user_id=${userId}`);
+            const data = await response.json();
+            balance = data.balance;
+            updateUI();
+        }
+
+        async function updateBalance() {
+            await fetch(`${serverUrl}/update_balance`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ user_id: userId, balance: balance })
+            });
+        }
 
         function updateUI() {
             document.getElementById('balance').innerText = balance;
         }
 
         function earn() {
-            balance += tapIncome;
+            balance += 20;
             updateUI();
+            updateBalance();
         }
+
+        getBalance();
     </script>
 </body>
 </html>
